@@ -20,7 +20,8 @@ We can use this code to train our own Word2Vec or FastText word vector models fo
 
 
 ## Work Flow
-* STEP 1. Download the [wikipedia database backup dumps](https://dumps.wikimedia.org/backup-index.html) of the language you want.
-* STEP 2. Extract running texts to `data/` folder.
+* STEP 1. Download and unzip [wikipedia database backup dumps](https://dumps.wikimedia.org/backup-index.html) of the language you want.
+  - For example, for Indonesian, we will search for "idwiki" and download the [file for "Articles, templates, media/file descriptions etc"](idwiki-20211020-pages-articles-multistream.xml.bz2)
+* STEP 2. Copy the xml file to `data/` folder.
 * STEP 3. Run `build_corpus.py`.
 * STEP 4. Run `make_wordvector.py` to get Word2Vec or FastText word vectors.
